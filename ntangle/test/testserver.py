@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 
-import server as ntangle
+import ntangle.server as ntangle
 
 class Toaster:
     @ntangle.expose('foo')

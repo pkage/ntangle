@@ -1,0 +1,39 @@
+protocol: hijack req/rep
+
+send:
+
+{
+	"func": "name",
+	"args": [1,2,3]
+}
+
+recv:
+
+{
+	"success": true,
+	"return": 6
+}
+
+or 
+
+{
+	"success": false,
+	"message": "broke here"
+}
+
+discovery:
+
+
+send: 
+{
+	"func": "#listing"
+}
+
+return:
+
+{
+	"funcs": [
+		{"name": "testfn"},
+		...
+	]
+}
